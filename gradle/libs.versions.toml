@@ -1,0 +1,60 @@
+[versions]
+agp = "8.8.0"
+aspectjrt = "1.9.6"
+aspectjrtVersion = "1.9.7"
+aspectjtools = "1.9.19"
+aspectjtoolsVersion = "1.9.7"
+aspectjweaver = "1.9.7"
+githubGradleAndroidPluginAspectjx = "<version>"
+gradleAndroidPluginAspectjx = "2.0.10"
+gradleAndroidPluginAspectjxVersion = "2.0.10"
+hujiangGradleAndroidPluginAspectjx = "2.0.8"
+kotlin = "2.0.0"
+coreKtx = "1.10.1"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+kotlinStdlib = "2.0.21"
+lifecycleRuntimeKtx = "2.6.1"
+activityCompose = "1.8.0"
+composeBom = "2024.04.01"
+logexecutiontimeProcessor = "1.0.0"
+plugin = "1.2.0"
+pluginVersion = "1.4.1"
+
+[libraries]
+androidaspectj-gradle-android-plugin-aspectjx = { module = "com.github.HujiangTechnology.AndroidAspectJ:gradle-android-plugin-aspectjx", version.ref = "gradleAndroidPluginAspectjxVersion" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+aspectjrt = { module = "org.aspectj:aspectjrt", version.ref = "aspectjtools" }
+aspectjrt-v196 = { module = "org.aspectj:aspectjrt", version.ref = "aspectjrt" }
+aspectjrt-v197 = { module = "org.aspectj:aspectjrt", version.ref = "aspectjrtVersion" }
+aspectjtools = { module = "org.aspectj:aspectjtools", version.ref = "aspectjtools" }
+aspectjtools-v197 = { module = "org.aspectj:aspectjtools", version.ref = "aspectjtoolsVersion" }
+aspectjweaver = { module = "org.aspectj:aspectjweaver", version.ref = "aspectjtools" }
+aspectjweaver-v197 = { module = "org.aspectj:aspectjweaver", version.ref = "aspectjweaver" }
+gradle-android-plugin-aspectjx = { module = "com.hujiang.aspectjx:gradle-android-plugin-aspectjx", version.ref = "gradleAndroidPluginAspectjx" }
+gradle-android-plugin-aspectjx-v208 = { module = "com.hujiang.aspectjx:gradle-android-plugin-aspectjx", version.ref = "hujiangGradleAndroidPluginAspectjx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlinStdlib" }
+logexecutiontime-processor = { module = "com.example:logexecutiontime-processor", version.ref = "logexecutiontimeProcessor" }
+plugin = { module = "com.ibotta:plugin", version.ref = "plugin" }
+plugin-v141 = { module = "com.ibotta:plugin", version.ref = "pluginVersion" }
+wurensen-gradle-android-plugin-aspectjx = { module = "io.github.wurensen:gradle-android-plugin-aspectjx", version.ref = "githubGradleAndroidPluginAspectjx" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+
