@@ -42,10 +42,13 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     )
 }
 @LogExecutionTime
+fun sleepTwoSeconds() {
+    Thread.sleep(2000)
+}
+
 fun sleepTwoSecondsLoop() {
     while (true) {
-        Log.d("LoopAOP", "begin")
-        Thread.sleep(2000)
+  sleepTwoSeconds()
     }
 }
 @Preview(showBackground = true)

@@ -63,9 +63,8 @@ dependencies {
     debugImplementation libs.androidx.ui.test.manifest
     //implementation 'org.aspectj:aspectjweaver:1.9.19'
 
-    implementation libs.aspectjtools
 
-
+    implementation(libs.aspectjrt.v196)
 
 
 }
